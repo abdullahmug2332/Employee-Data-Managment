@@ -38,7 +38,7 @@ export default function Form() {
 
   return (
     <div className="form" >
-      <div className="h1"><h1>Employee Information</h1></div>
+      {/* <div className="h1"><h1>Employee Information</h1></div> */}
       <div className="container">
         <div className="namecon">
           <p>Employee Name</p>
@@ -54,7 +54,7 @@ export default function Form() {
         </div>
         <div className="addresscon">
           <p>Employee Address</p>
-          <textarea name="address" autoComplete='off' value={inputdata.address} onChange={changehandle} id="address" cols="94" rows="10"></textarea>
+          <textarea name="address" autoComplete='off' value={inputdata.address} onChange={changehandle} id="address" cols="94" rows="10" placeholder="Entre Adress here"></textarea>
         </div>
         <div className="departmentcon" >
           <p>Select your Department</p>
@@ -90,7 +90,6 @@ export default function Form() {
             <th>DEPARTMENT</th>
             <th>Working Status</th>
             <th>Action</th>
-
           </tr>
           {
             inputarr.map(
